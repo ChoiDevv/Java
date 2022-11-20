@@ -12,8 +12,8 @@ public class ResponseDto {
         this.result = result;
     }
 
-    public void add(int firstNumber, int secondNumber) {
-        this.result = firstNumber + secondNumber;
+    public int getResult() {
+        return result;
     }
 
     @Override
@@ -21,5 +21,21 @@ public class ResponseDto {
         return "ResponseDto{" +
                 "result=" + result +
                 '}';
+    }
+
+    public void add(int firstNumber, int secondNumber) {
+        this.result = firstNumber + secondNumber;
+    }
+
+    public void minus(int firstNumber, int secondNumber) {
+        this.result = firstNumber - secondNumber;
+    }
+
+    public void multiplication(int firstNumber, int secondNumber) {
+        this.result = firstNumber * secondNumber;
+    }
+
+    public void divide(int firstNumber, int secondNumber) {
+        this.result = firstNumber / secondNumber;
     }
 }
