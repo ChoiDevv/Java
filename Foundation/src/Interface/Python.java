@@ -2,6 +2,10 @@ package Interface;
 
 public class Python extends Programming implements LanguageImpl {
 
+    public String getProgram() {
+        return "python";
+    }
+
     public Python() {
 
     }
