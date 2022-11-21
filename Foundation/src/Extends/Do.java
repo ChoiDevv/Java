@@ -1,8 +1,11 @@
 package Extends;
 
+import java.time.LocalDateTime;
+
 public class Do {
     public static void main(String[] args) {
         String main = "Java";
+        LocalDateTime now = LocalDateTime.now();
         Java java = new Java(main);
         Programming programming = new Programming(main);
 
@@ -12,5 +15,6 @@ public class Do {
 
         Spring spring = new Spring("Java Spring");
         spring.coding();
+        spring.coding(now);
     }
 }

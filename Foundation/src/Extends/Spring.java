@@ -1,5 +1,7 @@
 package Extends;
 
+import java.time.LocalDateTime;
+
 public class Spring extends Java {
 
     public Spring(String name) {
@@ -8,5 +10,9 @@ public class Spring extends Java {
 
     public void coding() {
         System.out.println("I'm coding now framework >> " + this.name);
+    }
+
+    public void coding(LocalDateTime now) {
+        System.out.println("I'm coding now framework " + now);
     }
 }
