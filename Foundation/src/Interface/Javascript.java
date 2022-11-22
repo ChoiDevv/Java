@@ -1,9 +1,13 @@
 package Interface;
 
-public class Javascript extends Programming implements LanguageImpl {
+public class Javascript extends Programming implements DevelopmentImpl {
 
     public String getProgram() {
         return "javascript";
+    }
+
+    public void framework() {
+        System.out.println("Node Js");
     }
 
     public Javascript() {

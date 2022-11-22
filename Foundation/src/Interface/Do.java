@@ -10,5 +10,9 @@ public class Do {
         coding.coding(java);
         coding.coding(python);
         coding.coding(javascript);
+
+        java.framework();
+        python.framework();
+        javascript.framework();
     }
 }
