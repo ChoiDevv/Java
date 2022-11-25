@@ -1,9 +1,10 @@
 package Transaction;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String userId = "anonymous";
         String password;
         String productName;
@@ -16,8 +17,9 @@ public class Main {
         System.out.println("비밀번호를 입력하세요.");
         password = scanner.next();
 
-        User user = new User(userId, password);
-        user.validate();
+        User user = new User();
+        String loggedInUserId = user.login(userId, password);
+        System.out.println("현재 로그인된 아이디는 " + loggedInUserId + "입니다.");
 
         Product product = new Product();
         System.out.println("상품 정보입니다.");
@@ -30,7 +32,7 @@ public class Main {
         Order order = product.select(productName);
 
         System.out.println("구매하신 상품은 " + order.getProductName() + "원입니다.");
-        System.out.println("해당 가격은 " + order.getPrice() + "입니다.");
+        System.out.println("해당 가격은 " + order.getPrice() + "원입니다.");
 
         OrderProduct orderProduct = new OrderProduct();
         orderProduct.save(order.getProductName(), order.getPrice());
