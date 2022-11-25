@@ -31,7 +31,7 @@ public class Main {
         productName = scanner.next();
         Order order = product.select(productName);
 
-        System.out.println("구매하신 상품은 " + order.getProductName() + "원입니다.");
+        System.out.println("구매하신 상품은 " + order.getProductName() + "입니다.");
         System.out.println("해당 가격은 " + order.getPrice() + "원입니다.");
 
         OrderProduct orderProduct = new OrderProduct();
