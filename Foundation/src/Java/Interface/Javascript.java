@@ -1,4 +1,4 @@
-package Java.Interface.practice;
+package Java.Interface;
 
 public class Javascript extends Programming implements DevelopmentImpl {
 

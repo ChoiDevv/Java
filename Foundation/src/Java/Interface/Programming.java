@@ -1,4 +1,4 @@
-package Java.Interface.practice;
+package Java.Interface;
 
 public class Programming {
     public String name;

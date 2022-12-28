@@ -1,4 +1,4 @@
-package Java.Interface.practice;
+package Java.Interface;
 
 public interface DevelopmentImpl extends FrameworkImpl, LanguageImpl {
 
