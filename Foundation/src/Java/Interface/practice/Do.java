@@ -1,4 +1,4 @@
-package Java.Interface;
+package Java.Interface.practice;
 
 public class Do {
     public static void main(String[] args) {

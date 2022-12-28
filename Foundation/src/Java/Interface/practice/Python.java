@@ -1,4 +1,4 @@
-package Java.Interface;
+package Java.Interface.practice;
 
 public class Python extends Programming implements DevelopmentImpl {
 
