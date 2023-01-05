@@ -1,4 +1,4 @@
-package Java.OOP.Solid.SRP;
+package Java.OOP.Solid;
 
 public class UserRequest {
 

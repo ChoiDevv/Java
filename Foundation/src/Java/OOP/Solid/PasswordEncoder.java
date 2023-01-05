@@ -1,8 +1,8 @@
-package Java.OOP.Solid.SRP;
+package Java.OOP.Solid;
 
 public class PasswordEncoder {
 
-    public static StringBuilder passwordEncode(String password) {
+    public StringBuilder passwordEncode(String password) {
         StringBuilder sb = new StringBuilder();
 
         return sb.append("{encode}" + password);
